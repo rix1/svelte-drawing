@@ -83,7 +83,8 @@
 
 <div class="flex-auto">
 
-  <div class="absolute">
+    <p class="tc db w-100"><strong>Welcome!</strong> On this page you can draw with fruit.</p>
+  <div class="absolute no-select bottom-0">
     <ShowCoords x={windowWidth} y={windowHeight}>
       <span slot="x">windowWidth</span>
       <span slot="y">windowHeight</span>
@@ -91,8 +92,8 @@
     <ShowCoords x={mouseX} y={mouseY} />
     <button on:click={resetDrawing}>Reset</button>
   </div>
+    <span class="absolute no-select bottom-0 right-0 mr3">Heavily inspired by <a href="http://www.yokoland.com">yokoland.com</a></span>
 
-  <pre class="absolute right-0 mr3">Is mouse down: {mouseDown}</pre>
 
   <div
     style="display: inline-block;"
